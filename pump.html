@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Font-Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Feeding Pump Project</a></h1>
+					</header>
+
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Low-Cost Automatic Feeding Pump</h2>
+								<p>A low-cost automated feeding pump designed for neonates living in low and middle income countries.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Overview</h3>
+									<p>Premature death due to respiratory distress syndrome and malnutrition is one of the leading causes of mortality in preterm babies. These infants lack the mature neurophysiological function needed to self-coordinate their feeding process. In low- and middle-income countries (LMICs), there is a high dependency on healthcare professionals to manually feed preterm babies, primarily due to the lack of affordable automatic feeding systems. The goal of this project was to design an automated feeding system to deliver breast milk to preterm babies in LMICs, within local technology and design constraints. This solution aims to reduce the burden on healthcare professionals and allow clinicians to accurately deliver the required volume of nutrition at the appropriate flow rate.</p>
+									<p>The final design allows the clinician to set two parameters: flow rate and volume of breast milk. This information is processed by a microcontroller to accurately administer the nutrition to the infant. The system consists of a liquid crystal display (LCD), a voltage and current sensor, a temperature sensor, three LEDs, a buzzer, a peristaltic pump, and a microcontroller. The automated feeding system is capable of delivering nutrition at flow rates between 5 ml and 15 ml per minute, with a maximum error margin of ±3 ml, and can administer volumes ranging from 20 ml to 60 ml.</p>
+
+
+									<h3 class="major">Diagrams</h3>
+									<p>Snippets showing design assembly and flow diagram.</p>
+
+									<section class="features">
+										<article>
+											<a class="image"><img src="img/feedpump.jpeg" alt="" /></a>
+											<h3 class="major">Feeding Pump</h3>
+											<p>The figure above shows the physical prototype of the low-cost feeding pump device. It features a peristaltic pump (visible at the top, connected to tubing) for delivering breast milk. The enclosure houses various components, including an LCD screen for displaying system information and user settings. There are also three LED indicators (green, yellow, and red), which serve as visual alerts for different operating states: the red LED indicates power status, the yellow LED signals an error, and the green LED shows when the pumping process is complete.</p>
+										</article>
+										<article>
+											<a class="image"><img src="img/FlowD.png" alt="" /></a>
+											<h3 class="major">Flow Diagram</h3>
+											<p>The flow diagram illustrates an automated breast milk pumping system that incorporates multiple low-cost components for efficient operation. The Pumping Unit uses a peristaltic pump to transfer breast milk, controlled by a motor driver. The Signal Monitoring Unit includes sensors to track parameters such as voltage and current readings of peristaltic pump, while the Signal Controlling Unit uses an Arduino Uno/ATmega 328p to process data and manage system functions. Users interact with the system through the User Interaction Unit, which features an LCD display and buttons for adjusting settings. Finally, the Alarm/Alert System Unit provides notifications through LEDs and a buzzer.</p>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">More Information</h2>
+							<p>Click the github link below to get more information on project.</p>
+						
+							<ul class="contact">
+								<i class="fab fa-github mr-2 fa-2x"></i><a href="https://github.com/NathanielAdibuer/FeedingPump">github.com/NathanielAdibuer/FeedingPump</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

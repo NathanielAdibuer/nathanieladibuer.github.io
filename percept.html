@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Font-Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Expansion in an Artificial Neural Network</a></h1>
+					</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Computational Benefits of Expansion and Sparsity in Neural Networks</h2>
+								<p>I explore how an artificial neural network can benefit from expansion and sparsity in its hidden layers.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Overview</h3>
+									<p>This project explores the computational benefits of using expansion and sparsity for inputs that are organized in clusters, where each cluster represents different types of stimuli and the variability within clusters is attributed to sensory or neural noise. Inspired by the 2014 work of Babadi and Sompolinsky, which showed that feed-forward random synaptic weights can amplify input variability, this project aims to investigate how these principles apply to a linear regression task.</p>
+									<p>The original study focused on binary classification, demonstrating that sparsity in downstream neural populations could amplify noise when representing sensory information. Here, I extend their findings to linear regression to explore other computational advantages that expansion and sparsity might offer, especially for clustered inputs.</p>
+									<p>By using mathematical simulations, I aim to understand how expanding representations in sparse networks can improve computational efficiency or accuracy, providing insights into how biological neural systems might effectively process complex sensory information.</p>
+
+									<h3 class="major">Result</h3>
+									<p>The snippets below shows the model and graph obtained from the simulation.</p>
+
+									<section class="features">
+										<article>
+											<a class="image"><img src="img/per.jpg" alt="" /></a>
+											<h3 class="major">Perceptron Schematic</h3>
+											<p>The figure above shows the schematic of my perceptron. It includes j weights, which are fixed and randomly initialized; Ns, representing the number of units in the input layer drawn from a Gaussian distribution; Nc, indicating the number of units in the hidden layer; W, representing the learned weights; and y, the output.</p>
+										</article>
+										<article>
+											<a class="image"><img src="img/graph.png" alt="" /></a>
+											<h3 class="major">Expansion of Hidden Size of a Perceptron</h3>
+											<p>The figure above shows the results of my experiment demonstrating the relationship between the hidden layer size and the average error in a neural network. The graph indicates that as the number of units in the hidden layer (hidden size) increases, the average error decreases, suggesting improved performance with large number of units in hidden layers.</p>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">More Information</h2>
+							<p>Click the github link below to get more information on project.</p>
+						
+							<ul class="contact">
+								<i class="fab fa-github mr-2 fa-2x"></i><a href="https://github.com/NathanielAdibuer/ExpansionInPerceptron">github.com/NathanielAdibuer/ExpansionInPerceptron</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
