@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Font-Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Automated Detection and Labeling of Gel Electrophoresis Images</a></h1>
+					</header>
+
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Feature Extraction in Gel Electrophoresis Analysis</h2>
+								<p>Extracting Features from Gel Electrophoresis Scans Using Image Processing Techniques</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Overview</h3>
+									<p>Automating the detection and labelling of lanes in 96-well plate gel electrophoresis images addresses a critical need for improving efficiency and accuracy in biological data analysis. Manual labelling is labor-intensive and prone to errors, especially when processing large datasets, such as those produced during pandemic-related research such as the COVID-19 pandemic. The developed solution aims to streamline the analysis process by reducing manual intervention and providing a reliable means of correctly labelling gel electrophoresis images, thus minimising the risks of mislabeling and enhancing reproducibility.</p>
+									<p>The approach utilises computer vision and image processing techniques, implemented in Python using libraries such as OpenCV, NumPy, and Matplotlib. Key stages in the workflow include grayscale conversion to simplify image data, binary thresholding for segmenting foreground features, Canny edge detection to delineate lane boundaries, and contour extraction to identify relevant regions. By systematically computing lane widths, gaps, and bounding boxes, the algorithm was able to label lanes and ladders with a high level of accuracy, particularly in images with lane widths of 9 and 10 pixels, achieving 83% accuracy in those cases.</p>
+									<p>This system has significant potential to support laboratory workflows by minimising manual workload, reducing error rates, and enhancing the speed of DNA analysis. Future improvements could focus on integrating machine learning models to better handle variations in lane width and optimise the algorithm’s performance across different gel images. The resulting tool could play an essential role in accelerating biological research, offering a consistent and automated approach to electrophoresis image analysis.</p>
+
+									<h3 class="major">Results</h3>
+									<p>Snippets showing some results of various algorithms ran on the images.</p>
+
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="img/gel2.png" alt="" /></a>
+											<h3 class="major">Bounding Box Detection of Lanes and Ladders in Gel Electrophoresis Image</h3>
+											<p>The image above demonstrates the results of the automated detection process for identifying lanes and ladders in a gel electrophoresis scan. Bounding boxes have been accurately drawn around individual lanes and ladders, showcasing the algorithm's ability to locate regions of interest. These bounding boxes help isolate each lane for further processing, ensuring correct identification before numerical labels are applied.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="img/gel3.png" alt="" /></a>
+											<h3 class="major">Final Lane and Ladder Labeling in Gel Electrophoresis</h3>
+											<p>This image shows the final labeling of lanes and ladders in the gel electrophoresis scan. The first and last ladders are labeled 'L,' following the standard convention, while the lanes in between are labeled consecutively. The labeling process involved calculating the coordinates of each lane and ladder, allowing the lane detection algorithm to accurately assign labels based on their positions.</p>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">More Information</h2>
+							<p>Click on github link below for more information.</p>
+
+							<ul class="contact">
+								<i class="fab fa-github mr-2 fa-2x"></i><a href="https://github.com/NathanielAdibuer/ImageProcessingInGelElectrophoresis/blob/main/ElectrophoresisScans.ipynb">github.com/NathanielAdibuer/ElectrophoresisScans</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
